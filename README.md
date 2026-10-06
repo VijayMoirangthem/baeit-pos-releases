@@ -12,7 +12,22 @@ This repository contains **installers only**. The source code is private.
 2. Under the newest release, download **`Baeit POS Beta Setup x.y.z.exe`**.
 3. Only download files from this page.
 
-**Requirements:** Windows 10 or newer (64-bit). An internet connection is needed for the first sign-in, for sync and for updates; billing works offline afterwards.
+An internet connection is needed for the first sign-in, for sync and for updates; billing works offline afterwards. See **System requirements** below.
+
+## System requirements
+
+| | Baeit POS (no AI) | Baeit POS + optional local AI |
+|---|---|---|
+| **Windows** | Windows 10 or newer, 64-bit | Windows 10 or newer, 64-bit |
+| **Processor** | Dual-core x64 | 4 or more threads recommended (2 minimum) |
+| **Memory (RAM)** | 4 GB recommended for comfortable billing alongside other programs | **8 GB recommended**, 6 GB minimum |
+| **Disk space** | Installer about 115 MB; installed about 450 MB; keep at least **5 GB free** for data, backups and updates (the app warns below 5 GB and treats under 1 GB as unsafe) | The above, plus the AI model (a few GB) and runtime. Keep at least **10 GB free** recommended, 6 GB minimum |
+| **Graphics card** | Not required | Not required (AI runs on the processor) |
+| **Internet** | First sign-in, sync and updates only | Same, plus a one-time model download; AI itself runs offline |
+
+How firm these numbers are:
+- **No-AI figures** come from the checks built into the app (**Settings → Device readiness**) and the installer size. They have not been tested on a wide range of low-end machines yet.
+- **AI figures are provisional.** They are estimates from published model memory sizes, **not measurements**. The AI model is not available for download yet. When it is, the app checks your computer first and tells you plainly whether local AI can run, and you can skip it. The POS works fully without AI.
 
 ## Install
 

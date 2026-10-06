@@ -1,4 +1,4 @@
-# Baeit POS — Downloads
+# Baeit POS - Downloads
 
 Official download page for **Baeit POS**, the offline-first point-of-sale for restaurants on Windows.
 

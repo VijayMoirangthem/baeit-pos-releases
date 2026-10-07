@@ -21,13 +21,22 @@ An internet connection is needed for the first sign-in, for sync and for updates
 | **Windows** | Windows 10 or newer, 64-bit | Windows 10 or newer, 64-bit |
 | **Processor** | Dual-core x64 | 4 or more threads recommended (2 minimum) |
 | **Memory (RAM)** | 4 GB recommended for comfortable billing alongside other programs | **8 GB recommended**, 6 GB minimum |
-| **Disk space** | Installer about 115 MB; installed about 450 MB; keep at least **5 GB free** for data, backups and updates (the app warns below 5 GB and treats under 1 GB as unsafe) | The above, plus the AI model (a few GB) and runtime. Keep at least **10 GB free** recommended, 6 GB minimum |
+| **Disk space** | Installer about 115 MB; installed about 450 MB; keep at least **5 GB free** for data, backups and updates (the app warns below 5 GB and treats under 1 GB as unsafe) | The above, plus the AI model (**3.1 GB**) and AI engine (**19 MB**), about **3.4 GB** in total. Keep at least **10 GB free** recommended, 6 GB minimum |
 | **Graphics card** | Not required | Not required (AI runs on the processor) |
 | **Internet** | First sign-in, sync and updates only | Same, plus a one-time model download; AI itself runs offline |
 
 How firm these numbers are:
 - **No-AI figures** come from the checks built into the app (**Settings → Device readiness**) and the installer size. They have not been tested on a wide range of low-end machines yet.
-- **AI figures are provisional.** They are estimates from published model memory sizes, **not measurements**. The AI model is not available for download yet. When it is, the app checks your computer first and tells you plainly whether local AI can run, and you can skip it. The POS works fully without AI.
+- **AI figures are provisional.** The download sizes above are exact. The RAM and processor figures are estimates, with one real measurement so far: on a 15.7 GB laptop (Intel Core i5, 12 threads) the AI loaded in about 19 seconds and answered in under 2 seconds. Smaller PCs have not been measured yet.
+- **Local AI is optional.** The app checks your computer first and tells you plainly whether local AI can run. You can skip it, or set it up any time from **Settings → Local AI** or the **AI Insights** tab. The POS works fully without AI.
+
+### What local AI downloads
+
+Only when you press **Download & set up local AI**, and only from these publishers:
+- the AI model, Google's official Gemma 4 E2B (Apache-2.0), from Hugging Face;
+- the AI engine, the open-source llama.cpp (MIT), from GitHub.
+
+Both files are checked against fixed checksums built into the app before they are used. The AI runs on your computer, and your sales data is not sent anywhere.
 
 ## Install
 
